@@ -2,42 +2,74 @@
     <div class="container">
         <div class="header__top">
             <a class="logo" href="#">
-                <img class="logo__img" src="" alt="logo">   
+                <picture>
+                    <source srcset="../images/logo.avif" type="image/avif">
+                    <source srcset="../images/logo.webp" type="image/webp">
+                    <img src="../images/logo.png" alt="logo">
+                </picture>
             </a>
             <nav class="header__menu">
-                <ul class="menu__list">
-                    <li class="menu__list-item">
-                        Маршруты
+                <ul class="header__menu-list">
+                    <li class="header__menu-list-item">
+                        <a class="header__meny-lict-link" href="#">
+                            Маршруты
+                        </a>
                     </li>
-                    <li class="menu__list-item">
-                        Галерея
+                    <li class="header__menu-list-item">
+                        <a class="header__meny-lict-link" href="#">
+                            Галерея
+                        </a>
                     </li>
-                    <li class="menu__list-item">
-                        Вопрос-Ответ
+                    <li class="header__menu-list-item">
+                        <a class="header__meny-lict-link" href="#">
+                            Вопрос-Ответ
+                        </a>
                     </li>
-                    <li class="menu__list-item">
-                        Контакты
+                    <li class="header__menu-list-item">
+                        <a class="header__meny-lict-link" href="#">
+                            Контакты
+                        </a>
                     </li>
-                    <li class="menu__list-item">
-                        Забронировать
+                    <li class="header__menu-list-item">
+                        <a class="header__meny-lict-link" href="#">
+                            Забронировать
+                        </a>
+                        
                     </li>
                 </ul>
                 <div class="header__contacts">
-                    <div class="header__phone"></div>
+                    <div class="header__phone">
+                        <a href="tel:79283332645" class="header__phone-link">
+                            <img class="svg-phone-dims" src="../images/sprite.svg#phone" alt="phone">
+                            <p class="header__phone-text">+7 928 333 26 45</p>
+                        </a>
+                    </div>
                     <button class="header__contacts-btn">Перезвоните мне</button>
                 </div>
             </nav>
+            
         </div>
         <div class="header__content">
             <h1 class="header__title">
-                Экскурсии наквадроциклахв Геленджике
+                Экскурсии на квадроциклах в Геленджике
             </h1>
             <p class="header__subtitle">
                 приезжайте за новыми ощущениями и эмоциями!
             </p>
-            <button class="header__subtitle-btn">
-                Подобрать маршрут
+            <button class="header-content__btn">
+                <div class="header-content__btn-text">Подобрать маршрут</div>
+                <div class="header-content__btn-icon">
+                    <img class="svg-arrow_right-dims" src="../images/arrow_right.svg#arrow_right" alt="arrow">
+                </div>
+                
             </button>
+        </div>
+        
+    </div>
+    <div class="header__carusel-inner">
+        <div class="header__carusel">
+            <div class="header__carusel-item-1"></div>
+            <div class="header__carusel-item-2"></div>
         </div>
     </div>
     

@@ -1,0 +1,9 @@
+$background-1: '../images/background1.webp'; 
+$background-2: '../images/background2.webp';
+
+@mixin background-options ($url) {
+    background-image: url($url);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
