@@ -1,0 +1,30 @@
+.our-routes {
+    padding: 57px 0 114px 0;
+    @include background-options($our-route-background);
+
+    &__inner {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__content {
+        width: 50%;
+    }
+
+    &__title {
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 39px;
+        &::before {
+            content: '';
+            width: 81px;
+            height: 1px;
+            display: inline-block 2px;
+            background-color: $accent-color;
+        }
+    }
+
+    &__carusel {
+        width: 50%;
+    }
+}

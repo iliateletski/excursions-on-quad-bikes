@@ -9,10 +9,21 @@ body {
 	line-height: 22px;
 }
 
+button {
+	cursor: pointer;
+}
+
 .wrapper {
 	display: flex;
 	flex-direction: column;
 	min-height: 100%;
+}
+
+.title {
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 47px;
+	text-align: center;
 }
 
 .main {

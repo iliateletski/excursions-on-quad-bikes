@@ -1,5 +1,7 @@
 $background-1: '../images/background1.webp'; 
 $background-2: '../images/background2.webp';
+$our-route-background: '../../images/our_routes_background.jpg';
+$accent-color: #037E8C;
 
 @mixin background-options ($url) {
     background-image: url($url);

@@ -1,8 +1,9 @@
 .header {
-    height: 100vh;
+    height: 120vh;
     position: relative;
+    color: #fff;
+    margin-bottom: 47px;
     
-
     &__top {
         position: relative;
         z-index: 10;
@@ -42,6 +43,7 @@
 
     &__phone-link {
         display: flex;
+        align-items: center;
         margin-bottom: 11px;
     }
 
@@ -55,6 +57,7 @@
         font-size: 14px;
         font-weight: 600;
         line-height: 14px;
+        color: #fff;
         padding: 12px 20px;
         background-color: #FFFFFF66;
         border: none;
@@ -92,12 +95,12 @@
 
     &__carusel-item-1 { 
         @include background-options($background-1);
-        height: 100vh;
+        height: 120vh
     }
 
     &__carusel-item-2 { 
         @include background-options($background-2);
-        height: 100vh;
+        height: 120vh;
     }
     
 }
@@ -116,7 +119,8 @@
     font-size: 14px;
     font-weight: 600;
     line-height: 14px;
-    background-color: #037E8C;
+    color: #fff;
+    background-color: $accent-color;
     padding: 12px 23px;
     border: none;
     border-radius: 9px;
@@ -138,6 +142,55 @@
 .svg-arrow_right-dims {
     width: 14px;
     height: 10px;
+}
+
+.header__carusel {
+    position: relative;
+
+    .slick-dots {
+        position: absolute;
+        top: 38%;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 6%;
+    }
+
+    .slick-dots::after {
+        content: '';
+        width: 1px;
+        height: 54px;
+        background-color: #fff;
+        display: inline-block;
+        position: absolute;
+        bottom: -68px;
+    }
+
+    .slick-dots::before {
+        content: "scroll";
+        display: inline-block;
+        transform: rotate(90deg);
+        position: absolute;
+        bottom: -113px;
+        left: -18px;
+        font-size: 18px;
+        font-weight: 300;
+    }
+
+    .slick-dots button {
+        font-size: 0px;
+        width: 8px;
+        height: 8px;
+        background-color: #fff;
+        border: none;
+        border-radius: 50%;
+        padding: 0;
+    }
+
+    .slick-active button {
+        background-color: $accent-color
+    }
 }
 
 
