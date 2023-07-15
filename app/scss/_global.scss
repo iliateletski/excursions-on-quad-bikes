@@ -19,13 +19,6 @@ button {
 	min-height: 100%;
 }
 
-.title {
-	font-size: 36px;
-	font-weight: 700;
-	line-height: 47px;
-	text-align: center;
-}
-
 .main {
 	flex: 1 0 auto;
 }
@@ -39,6 +32,99 @@ button {
   padding: 0 10px;
 }
 
+.btn-transparent {
+	font-weight: 600;
+	line-height: 18px;
+	color: $accent-color;
+	padding: 14px 45px;
+	border-radius: 9px;
+	border: 2px solid $accent-color;
+	background-color: transparent;
+	transition: all .2s;
+
+	&:hover {
+		background-color: $accent-color;
+		color: #fff;
+	}
+}
+
+.btn-accent {
+	font-weight: 600;
+	line-height: 18px;
+	color: #fff;
+	padding: 14px 45px;
+	border-radius: 9px;
+	border: 2px solid transparent;
+	background-color: $accent-color;
+	transition: all .2s;
+
+	&:hover {
+		background-color: transparent;
+		border: 2px solid $accent-color;
+		color: $accent-color;
+	}
+
+}
+
+.title {
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 47px;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.slick-slider {
+	position: static;
+}
+
+.slick-dots {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 54px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-right: 6%;
+	line-height: 0;
+}
+
+.slick-dots::after {
+	content: '';
+	width: 54px;
+	height: 1px;
+	background-color: #000;
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	margin-left: 90px;
+}
+
+.slick-dots::before {
+	content: "scroll";
+	display: inline-block;
+	position: absolute;
+	// bottom: -113px;
+	// left: -18px;
+	margin-left: 165px;
+	font-size: 18px;
+	font-weight: 300;
+}
+
+.slick-dots button {
+	font-size: 0px;
+	width: 8px;
+	height: 8px;
+	background-color: #000;
+	border: none;
+	border-radius: 50%;
+	padding: 0;
+}
+
+.slick-active button {
+	background-color: $accent-color
+}
 
 
 

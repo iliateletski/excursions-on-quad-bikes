@@ -3,28 +3,151 @@
     @include background-options($our-route-background);
 
     &__inner {
+
+    }
+
+    &__item {
         display: flex;
-        flex-wrap: wrap;
+    }
+
+    &__item + .our-routes__item {
+        margin-top: 145px;
     }
 
     &__content {
         width: 50%;
+        padding-left: 110px;
     }
 
     &__title {
         font-size: 36px;
         font-weight: 600;
         line-height: 39px;
+        text-transform: uppercase;
+        align-items: center;
+        position: relative;
+        margin-bottom: 10px;
         &::before {
             content: '';
             width: 81px;
-            height: 1px;
-            display: inline-block 2px;
+            height: 4px;
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: -110px;
             background-color: $accent-color;
         }
     }
 
-    &__carusel {
+    &__price {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 26px;
+        margin-bottom: 32px;
+
+        &::before {
+            content: 'от';
+            margin-right: 8px;
+        }
+
+        &::after {
+            content: '₽';
+            margin-left: 8px;
+        }
+    }
+
+    &__description {
+        font-size: 16px;
+        line-height: 17px;
+        margin-bottom: 27px;
+    }
+
+    &__description-term {
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        float: left;
+        &::after {
+            content: ':\a0';
+        }
+    }
+
+    &__description-icon {
+        width: 14px;
+        height: 14px;
+        margin-right: 17px;
+    }
+
+    &__description-definition {
+        font-weight: 600;
+        margin-bottom: 9px;
+    }
+
+    &__route-title {
+        font-size: 18px;
+        font-weight: 600;
+        text-transform: uppercase;
+        display: flex;
+        align-items: baseline;
+        margin-bottom: 13px;
+        &::after {
+            content: '';
+            width: 24px;
+            height: 24px;
+            display: block;
+            margin-left: 15px;
+            @include background-options($route-svg)
+        }
+    }
+
+    &__route-line {
+        margin-bottom: 40px;
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: space-between;
+        width: 75%;
+    }
+
+    
+}
+
+
+.our-routes {
+    &__carusel-inner {
         width: 50%;
+        position: relative;
+    }
+
+    &__carusel-item {
+        border-radius: 10px;
+        display: block !important;
+    }
+
+    &__carusel-img {
+        width: 250px;
+        height: 300px;
+        border-radius: 10px;
+        transition: all .4s;
+    }
+
+    .slick-slide {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 360px;
+        width: 360px;
+        margin-right: 25px;
+    }
+
+    .slick-track {
+        display: flex;
+        align-items: center;
+    }
+
+    .slick-active img {
+        width: 360px;
+        height: 360px;
     }
 }
