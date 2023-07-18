@@ -1,0 +1,23 @@
+.route-selection {
+    @include background-options($route-selection);
+    padding: 81px 0 94px 0;
+    color: #fff;
+    margin-bottom: 63px;
+    .title {
+        color: inherit;
+        margin-bottom: 19px;
+    }
+
+    &__inner {
+        text-align: center;
+    }
+
+    &__text {
+        text-align: center;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 23px;
+        margin-bottom: 43px;
+    }
+
+}

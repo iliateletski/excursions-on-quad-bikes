@@ -3,11 +3,14 @@
     @include background-options($our-route-background);
 
     &__inner {
-
     }
 
     &__item {
         display: flex;
+        justify-content: space-between;
+        &:nth-child(even) {
+            flex-direction: row-reverse;
+        }
     }
 
     &__item + .our-routes__item {
@@ -15,8 +18,11 @@
     }
 
     &__content {
-        width: 50%;
-        padding-left: 110px;
+        width: 45%;
+        padding: 0 10px 0 110px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
     &__title {
@@ -107,12 +113,11 @@
     &__buttons {
         display: flex;
         justify-content: space-between;
-        width: 75%;
+        width: 90%;
     }
 
     
 }
-
 
 .our-routes {
     &__carusel-inner {
@@ -123,13 +128,51 @@
     &__carusel-item {
         border-radius: 10px;
         display: block !important;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 250px !important;
+        height: 300px;
+        transition: all .4s;
     }
 
-    &__carusel-img {
-        width: 250px;
-        height: 300px;
-        border-radius: 10px;
-        transition: all .4s;
+    .base_route-1 {
+        background-image: url(../../images/base_route_1.webp);
+    }
+    .base_route-2 {
+        background-image: url(../../images/base_route_2.webp);
+    }
+    .base_route-3 {
+        background-image: url(../../images/base_route_3.webp);
+    }
+    .extended_route-1 {
+        background-image: url(../../images/extended_route_1.webp);
+    }
+    .extended_route-2 {
+        background-image: url(../../images/extended_route_2.webp);
+    }
+    .extended_route-3 {
+        background-image: url(../../images/extended_route_3.webp);
+    }
+    .experience_route-1 {
+        background-image: url(../../images/experience_route_1.webp);
+    }
+    .experience_route-2 {
+        background-image: url(../../images/experience_route_2.webp);
+    }
+    .experience_route-3 {
+        background-image: url(../../images/experience_route_3.webp);
+    }
+
+    // &__carusel-img {
+    //     width: 250px;
+    //     height: 300px;
+    //     border-radius: 10px;
+    //     transition: all .4s;
+    // }
+
+    .slick-slider{
+        position: static;
     }
 
     .slick-slide {
@@ -137,7 +180,7 @@
         align-items: center;
         justify-content: space-between;
         height: 360px;
-        width: 360px;
+        width: max-content;
         margin-right: 25px;
     }
 
@@ -146,8 +189,14 @@
         align-items: center;
     }
 
-    .slick-active img {
-        width: 360px;
-        height: 360px;
+    .slick-active {
+        width: max-content;
+        height: max-content;
+        
+        .our-routes__carusel-item {
+            width: 360px !important;
+            height: 360px;
+            
+        }
     }
 }

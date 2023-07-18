@@ -1,0 +1,22 @@
+.photo-gallery {
+    margin-bottom: 60px;
+
+    &__carusel-inner {
+        position: relative;
+        padding-bottom: 70px;
+    }
+    
+    .slick-slider {
+        position: static;
+    }
+
+    &__carousel-img {
+        width: 413px;
+        height: 413px;
+    }
+
+    .carousel-dots {
+        left: auto;
+        right: 50%;
+    }
+}

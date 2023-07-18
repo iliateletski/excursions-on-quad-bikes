@@ -63,7 +63,6 @@ button {
 		border: 2px solid $accent-color;
 		color: $accent-color;
 	}
-
 }
 
 .title {
@@ -74,11 +73,7 @@ button {
 	margin-bottom: 50px;
 }
 
-.slick-slider {
-	position: static;
-}
-
-.slick-dots {
+.carousel-dots {
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -90,7 +85,7 @@ button {
 	line-height: 0;
 }
 
-.slick-dots::after {
+.carousel-dots::after {
 	content: '';
 	width: 54px;
 	height: 1px;
@@ -101,7 +96,7 @@ button {
 	margin-left: 90px;
 }
 
-.slick-dots::before {
+.carousel-dots::before {
 	content: "scroll";
 	display: inline-block;
 	position: absolute;
@@ -112,7 +107,19 @@ button {
 	font-weight: 300;
 }
 
-.slick-dots button {
+.carusel-rtl {
+	.carousel-dots {
+		left: 67%;
+	}
+	.carousel-dots::after {
+		margin-right: -90px;
+	}
+	.carousel-dots::before {
+		margin-right: -165px;
+	}
+}
+
+.carousel-dots button {
 	font-size: 0px;
 	width: 8px;
 	height: 8px;
